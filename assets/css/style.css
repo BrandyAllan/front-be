@@ -33,6 +33,7 @@ header .barre {
 header .barre img {
   width: 100px;
   height: fit-content;
+  border-radius: 50%;
 }
 header .barre nav ul {
   list-style: none;
@@ -180,6 +181,7 @@ footer .foot-logo {
 footer .foot-logo img {
   width: 150px;
   height: fit-content;
+  border-radius: 50%;
 }
 footer .foot {
   grid-row: 2/3;
