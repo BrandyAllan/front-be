@@ -1,13 +1,20 @@
 body {
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(7, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   background-color: #151517;
 }
 
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #151517;
   grid-row: 1/2;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(2, 1fr);
+  padding-top: 20px;
 }
 header .btn-head {
   grid-row: 1/2;
@@ -42,6 +49,7 @@ header .barre nav ul li a {
   text-decoration: none;
   color: #e9d7c3;
   font-size: 18px;
+  font-family: "Montserrat", sans-serif;
 }
 header .barre nav ul li .dropdown {
   position: absolute;
@@ -66,7 +74,8 @@ header .barre nav ul li .dropdown li a:hover {
 header .barre nav ul li:hover .dropdown {
   display: flex;
 }
-header .btn-nav {
+
+.btn-nav {
   display: inline-flex;
   align-items: center;
   gap: 10px;
@@ -75,22 +84,46 @@ header .btn-nav {
   border-radius: 50px;
   border: none;
   background: #f3df05;
-  color: black;
+  color: #151517;
   font-weight: bold;
   font-size: 18px;
   letter-spacing: 1px;
   cursor: pointer;
   transition: all 0.3s ease;
 }
-header .btn-nav .icon {
+.btn-nav .icon {
   font-size: 20px;
 }
-header .btn-nav:hover {
+.btn-nav:hover {
   transform: scale(1.05);
   background: #e5b93b;
 }
-header .btn-nav:active {
+.btn-nav:active {
   transform: scale(0.98);
+}
+
+main {
+  grid-row: 2/3;
+  padding-top: 170px;
+}
+main .hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+  background-image: url(../img/bg3.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+}
+main .hero h1 {
+  color: #e9d7c3;
+  font-size: 120px;
+  margin: 0;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=style.css.map */

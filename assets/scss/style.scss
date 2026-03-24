@@ -1,15 +1,24 @@
 $white-text: #e9d7c3;
 $bg-color: #151517;
+$font-light: 'Montserrat', sans-serif;
+$font-bold: 'Bebas Neue', sans-serif;
 body{
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(7, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     background-color: $bg-color;
 }
 
 header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: $bg-color;
     grid-row: 1 / 2;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, 1fr);
+    padding-top: 20px;
     .btn-head{
         grid-row: 1 / 2;
         display: flex;
@@ -44,6 +53,7 @@ header{
                     text-decoration: none;
                     color: $white-text;
                     font-size: 18px;
+                    font-family: $font-light;
                 }
 
                 .dropdown {
@@ -80,36 +90,63 @@ header{
             }
     }
 
-    .btn-nav {
-        display: inline-flex;
+}
+
+.btn-nav {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    height: fit-content;
+    padding: 15px 30px;
+    border-radius: 50px;
+    border: none;
+
+    background: #f3df05;
+    color: $bg-color;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 1px;
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    .icon {
+        font-size: 20px;
+    }
+
+    &:hover {
+        transform: scale(1.05);
+        background: #e5b93b;
+    }
+
+    &:active {
+        transform: scale(0.98);
+    }
+}
+
+main{
+    grid-row: 2 / 3;
+    padding-top: 170px;
+
+    .hero{
+        display: flex;
+        flex-direction: column;
         align-items: center;
-        gap: 10px;
+        justify-content: center;
+        text-align: center;
+        gap: 20px;
+        background-image: url(../img/bg3.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 500px;
 
-        height: fit-content;
-        padding: 15px 30px;
-        border-radius: 50px;
-        border: none;
-
-        background: #f3df05;
-        color: black;
-        font-weight: bold;
-        font-size: 18px;
-        letter-spacing: 1px;
-
-        cursor: pointer;
-        transition: all 0.3s ease;
-
-        .icon {
-            font-size: 20px;
-        }
-
-        &:hover {
-            transform: scale(1.05);
-            background: #e5b93b;
-        }
-
-        &:active {
-            transform: scale(0.98);
+        h1{
+            color: $white-text;
+            font-size: 120px;
+            margin: 0;
+            font-family: $font-bold;
+            font-weight: bold;
         }
     }
 }
