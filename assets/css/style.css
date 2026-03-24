@@ -113,9 +113,9 @@ main .hero {
   justify-content: center;
   text-align: center;
   gap: 20px;
-  background-image: url(../img/bg3.jpg);
+  background-image: url(../img/bg3.png);
   background-size: cover;
-  background-position: center;
+  background-position: top;
   height: 500px;
 }
 main .hero h1 {
