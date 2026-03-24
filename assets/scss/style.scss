@@ -55,6 +55,9 @@ header{
                     color: $white-text;
                     font-size: 18px;
                     font-family: $font-light;
+                    &:hover {
+                        text-decoration: underline;
+                    }
                 }
 
                 .dropdown {

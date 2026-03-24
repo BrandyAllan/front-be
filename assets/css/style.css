@@ -52,6 +52,9 @@ header .barre nav ul li a {
   font-size: 18px;
   font-family: "Montserrat", sans-serif;
 }
+header .barre nav ul li a:hover {
+  text-decoration: underline;
+}
 header .barre nav ul li .dropdown {
   position: absolute;
   top: 100%;
