@@ -18,12 +18,12 @@ header{
     grid-row: 1 / 2;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, 1fr);
-    padding-top: 20px;
+    padding-top: 10px;
     .btn-head{
         grid-row: 1 / 2;
         display: flex;
         justify-content: center;
-        gap: 50px;
+        gap: 10px;
     }
     .barre{
         grid-row: 2 / 3;
